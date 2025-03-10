@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Lo Nuestro</title>
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <header>
+        <h1>Lo Nuestro, Panadería Artesanal</h1>
+    </header>
+
+    
+    
+    <section id="productos">
+        
+
+        <div class="producto">
+            <img src="images/pan_comun.jpg" alt="Pan Común">
+            <h3>Pan Común</h3>
+            <p>0,20€</p>
+            <div class="cantidad">
+                <button onclick="cambiarCantidad('pan_comun', -1)">-</button>
+                <span id="pan_comun">0</span>
+                <button onclick="cambiarCantidad('pan_comun', 1)">+</button>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="images/pan_espelta.jpeg" alt="Pan de Espelta">
+            <h3>Pan de Espelta</h3>
+            <p>3,05€</p>
+            <div class="cantidad">
+                <button onclick="cambiarCantidad('pan_espelta', -1)">-</button>
+                <span id="pan_espelta">0</span>
+                <button onclick="cambiarCantidad('pan_espelta', 1)">+</button>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="images/pan_trigo_sarraceno.jpeg" alt="Pan de Trigo Sarraceno">
+            <h3>Pan de Trigo Sarraceno</h3>
+            <p>2,55€</p>
+            <div class="cantidad">
+                <button onclick="cambiarCantidad('pan_trigo_sarraceno', -1)">-</button>
+                <span id="pan_trigo_sarraceno">0</span>
+                <button onclick="cambiarCantidad('pan_trigo_sarraceno', 1)">+</button>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="images/pan_integral.jpg" alt="Pan Integral">
+            <h3>Pan Integral</h3>
+            <p>3,50€</p>
+            <div class="cantidad">
+                <button onclick="cambiarCantidad('pan_integral', -1)">-</button>
+                <span id="pan_integral">0</span>
+                <button onclick="cambiarCantidad('pan_integral', 1)">+</button>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="images/pan_sin_gluten.jpeg" alt="Pan Sin Gluten">
+            <h3>Pan Sin Gluten</h3>
+            <p>1,75€</p>
+            <div class="cantidad">
+                <button onclick="cambiarCantidad('pan_sin_gluten', -1)">-</button>
+                <span id="pan_sin_gluten">0</span>
+                <button onclick="cambiarCantidad('pan_sin_gluten', 1)">+</button>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="images/pan_molde.jpg" alt="Pan de Molde">
+            <h3>Pan de Molde</h3>
+            <p>2,20€</p>
+            <div class="cantidad">
+                <button onclick="cambiarCantidad('pan_molde', -1)">-</button>
+                <span id="pan_molde">0</span>
+                <button onclick="cambiarCantidad('pan_molde', 1)">+</button>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="images/pan_molde_sin_gluten.jpeg" alt="Pan de Molde Sin Gluten">
+            <h3>Pan de Molde Sin Gluten</h3>
+            <p>8,55€</p>
+            <div class="cantidad">
+                <button onclick="cambiarCantidad('pan_molde_sin_gluten', -1)">-</button>
+                <span id="pan_molde_sin_gluten">0</span>
+                <button onclick="cambiarCantidad('pan_molde_sin_gluten', 1)">+</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito</h2>
+        <p>Total: <span id="total">0.00€</span></p>
+        <button onclick="procesarCompra()">Finalizar Compra</button>
+    </section>
+
+    <footer>
+        <p>Av. Federico García Lorca, 17 - Las Palmas de Gran Canaria</p>
+        <p>LA MINILLA
+        </p>
+        <p>📞 600.12.31.56</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
